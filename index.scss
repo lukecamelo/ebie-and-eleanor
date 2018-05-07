@@ -1,5 +1,6 @@
 $primary: rgb(100, 175, 100);
 $secondary: rgb(203, 248, 203);
+$background: rgb(205, 255, 230);
 
 html,
 body {
@@ -34,6 +35,7 @@ body {
 .nav-item {
   a {
     font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-decoration: none;
@@ -41,4 +43,43 @@ body {
   }
   display: flex;
   align-self: center;
+}
+
+.hero {
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .hero-text {
+    margin-top: -5rem;
+  }
+}
+
+.about-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-placeholder {
+  height: 300px;
+  width: 300px;
+  background-color: $secondary;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  background-color: $secondary;
+  justify-content: space-around;
+}
+
+.product {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: $primary;
+  height: 400px;
+  width: 400px;
 }
