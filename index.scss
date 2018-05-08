@@ -64,6 +64,24 @@ body {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  .blurb {
+    margin-left: 2rem;
+    width: 600px;
+    font-size: 1.5rem;
+
+    p {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 950px) {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .image-placeholder {
@@ -75,13 +93,38 @@ body {
 .product-container {
   display: flex;
   flex-direction: row;
-  background-color: $secondary;
   justify-content: space-around;
-  border: 1rem solid $primary;
 
   @media screen and (max-width: 1250px) {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.featured-products {
+  background-color: $secondary;
+
+  .product-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .2rem;
+
+    color: $background;
+    background-color: $primary;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+
+    width: 200px;
+    height: 50px;
   }
 }
 
@@ -99,8 +142,10 @@ body {
 }
 
 .mission-container {
+  margin-top: 5rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   .mission-text {
     width: 50%;
   }
@@ -108,5 +153,10 @@ body {
     width: 500px;
     height: 500px;
     background-color: $primary;
+  }
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
