@@ -143,6 +143,7 @@ body {
 
 .featured-products {
   background-color: $secondary;
+  padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   
   .product-link {
@@ -200,10 +201,22 @@ body {
   justify-content: space-around;
   align-items: center;
   
+  .left {
+    display: flex;
+    justify-content: center;
+    width: 50% !important;
+    float: left;
+  }
+
+  .right {
+    width: 50% !important;
+    float: right;
+  }
+
   .mission-text {
     color: $textgray;
     font-size: 2rem;
-    width: 50%;
+    width: 75%;
     
     .title {
       color: #2f302f;
@@ -218,8 +231,8 @@ body {
     }
   }
   .mission-image {
-    width: $lgwidth;
-    height: $lgheight;
+    height: 500px;
+    width: 500px;
     box-shadow: 2px 2px 5px #a1a1a1;
   }
   
@@ -235,8 +248,7 @@ body {
 
   @media screen and (max-width: 450px) {
     .mission-image {
-      width: 300px;
-      height: 300px;
+      width: 75%;
     }
   }
 }

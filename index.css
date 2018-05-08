@@ -132,6 +132,7 @@ body {
 
 .featured-products {
   background-color: #82B661;
+  padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
@@ -189,10 +190,22 @@ body {
   align-items: center;
 }
 
+.mission-container .left {
+  display: flex;
+  justify-content: center;
+  width: 50% !important;
+  float: left;
+}
+
+.mission-container .right {
+  width: 50% !important;
+  float: right;
+}
+
 .mission-container .mission-text {
   color: #616161;
   font-size: 2rem;
-  width: 50%;
+  width: 75%;
 }
 
 .mission-container .mission-text .title {
@@ -209,8 +222,8 @@ body {
 }
 
 .mission-container .mission-image {
-  width: 500px;
   height: 500px;
+  width: 500px;
   box-shadow: 2px 2px 5px #a1a1a1;
 }
 
@@ -226,8 +239,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .mission-container .mission-image {
-    width: 300px;
-    height: 300px;
+    width: 75%;
   }
 }
 /*# sourceMappingURL=index.css.map */
