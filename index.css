@@ -168,10 +168,8 @@ body {
 
 .product .product-pic {
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-image: url("assets/productpic.jpg");
   background-size: cover;
-  height: 400px;
+  height: auto;
   width: 100%;
 }
 
@@ -198,6 +196,8 @@ body {
 }
 
 .mission-container .right {
+  display: flex;
+  justify-content: center;
   width: 50% !important;
   float: right;
 }
@@ -205,7 +205,7 @@ body {
 .mission-container .mission-text {
   color: #616161;
   font-size: 2rem;
-  width: 75%;
+  width: 90%;
 }
 
 .mission-container .mission-text .title {
@@ -216,15 +216,16 @@ body {
 
 @media screen and (max-width: 450px) {
   .mission-container .mission-text {
-    width: 75%;
     font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
 .mission-container .mission-image {
-  height: 500px;
-  width: 500px;
-  box-shadow: 2px 2px 5px #a1a1a1;
+  padding: 10%;
+  height: auto;
+  width: 100%;
 }
 
 @media screen and (max-width: 950px) {
@@ -232,14 +233,11 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .mission-container .mission-text {
-    width: 75%;
+  .mission-container .left {
+    width: 100% !important;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .mission-container .mission-image {
-    width: 75%;
+  .mission-container .right {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
