@@ -7,7 +7,7 @@ body {
 
 .navbar {
   height: 5rem;
-  background-color: #64af64;
+  background-color: #485B45;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -40,7 +40,11 @@ body {
   text-transform: uppercase;
   letter-spacing: .2rem;
   text-decoration: none;
-  color: #cbf8cb;
+  color: #cdffe6;
+}
+
+.nav-item a:hover {
+  color: #82B661;
 }
 
 .hero {
@@ -65,21 +69,48 @@ body {
 .image-placeholder {
   height: 300px;
   width: 300px;
-  background-color: #cbf8cb;
+  background-color: #82B661;
 }
 
 .product-container {
   display: flex;
   flex-direction: row;
-  background-color: #cbf8cb;
+  background-color: #82B661;
   justify-content: space-around;
+  border: 1rem solid #485B45;
 }
 
-.product {
+@media screen and (max-width: 1250px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product .price {
+  font-weight: 300i;
+}
+
+.product .product-pic {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #64af64;
+  background-color: #485B45;
   height: 400px;
   width: 400px;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mission-container .mission-text {
+  width: 50%;
+}
+
+.mission-container .mission-image {
+  width: 500px;
+  height: 500px;
+  background-color: #485B45;
 }
 /*# sourceMappingURL=index.css.map */

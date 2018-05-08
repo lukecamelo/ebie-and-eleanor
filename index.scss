@@ -1,5 +1,5 @@
-$primary: rgb(100, 175, 100);
-$secondary: rgb(203, 248, 203);
+$primary: #485B45;
+$secondary: #82B661;
 $background: rgb(205, 255, 230);
 
 html,
@@ -39,7 +39,10 @@ body {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-decoration: none;
-    color: $secondary;
+    color: $background;
+    &:hover {
+      color: $secondary;
+    }
   }
   display: flex;
   align-self: center;
@@ -74,12 +77,36 @@ body {
   flex-direction: row;
   background-color: $secondary;
   justify-content: space-around;
+  border: 1rem solid $primary;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .product {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-color: $primary;
-  height: 400px;
-  width: 400px;
+  .price {
+    font-weight: 300i;
+  }
+  .product-pic {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: $primary;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  .mission-text {
+    width: 50%;
+  }
+  .mission-image {
+    width: 500px;
+    height: 500px;
+    background-color: $primary;
+  }
 }
