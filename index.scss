@@ -5,6 +5,8 @@ $background: rgb(205, 255, 230);
 $lgwidth: 500px;
 $lgheight: 500px;
 
+$textgray: #616161;
+
 html,
 body {
   margin: 0;
@@ -13,7 +15,7 @@ body {
 }
 
 .navbar {
-  height: 5rem;
+  height: 5em;
   background-color: $primary;
   display: flex;
   align-items: center;
@@ -21,7 +23,7 @@ body {
 }
 
 .nav-links {
-  margin-right: 2rem;
+  margin-right: 2em;
 }
 
 .nav-links ul {
@@ -84,11 +86,13 @@ body {
 .about-container {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  height: 800px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  align-items: center;
 
   .blurb {
     margin-left: 2rem;
@@ -97,6 +101,7 @@ body {
 
     p {
       margin-top: 0;
+      color: $textgray;
     }
 
   }
@@ -138,26 +143,29 @@ body {
 
 .featured-products {
   background-color: $secondary;
-
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  
   .product-link {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .2rem;
-
+    transition: .2s;
+    
     color: $background;
     background-color: $primary;
-
+    
     &:hover {
+      transform: translateY(2px);
       color: $secondary;
     }
-
+    
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
     margin-bottom: 2rem;
     margin: 0 auto;
-
+    
     width: 200px;
     height: 50px;
   }
@@ -165,11 +173,11 @@ body {
 
 .product {
   width: 400px;
-
+  
   .price {
     font-weight: 300i;
   }
-
+  
   .product-pic {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -178,7 +186,7 @@ body {
     height: 400px;
     width: 100%;
   }
-
+  
   @media screen and (max-width: 450px) {
     width: 75%;
     height: 50%;
@@ -191,12 +199,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+  
   .mission-text {
+    color: $textgray;
     font-size: 2rem;
     width: 50%;
-
+    
     .title {
+      color: #2f302f;
       font-weight: 700;
       font-style: italic;
     }
@@ -210,7 +220,7 @@ body {
   .mission-image {
     width: $lgwidth;
     height: $lgheight;
-    background-color: $primary;
+    box-shadow: 2px 2px 5px #a1a1a1;
   }
   
   

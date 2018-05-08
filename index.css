@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  height: 5rem;
+  height: 5em;
   background-color: #485B45;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .nav-links {
-  margin-right: 2rem;
+  margin-right: 2em;
 }
 
 .nav-links ul {
@@ -76,10 +76,12 @@ body {
 .about-container {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  height: 800px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 
 .about-container .blurb {
@@ -90,6 +92,7 @@ body {
 
 .about-container .blurb p {
   margin-top: 0;
+  color: #616161;
 }
 
 .about-container .image-placeholder {
@@ -129,12 +132,14 @@ body {
 
 .featured-products {
   background-color: #82B661;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
 .featured-products .product-link {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .2rem;
+  transition: .2s;
   color: #cdffe6;
   background-color: #485B45;
   display: flex;
@@ -148,6 +153,7 @@ body {
 }
 
 .featured-products .product-link:hover {
+  transform: translateY(2px);
   color: #82B661;
 }
 
@@ -184,11 +190,13 @@ body {
 }
 
 .mission-container .mission-text {
+  color: #616161;
   font-size: 2rem;
   width: 50%;
 }
 
 .mission-container .mission-text .title {
+  color: #2f302f;
   font-weight: 700;
   font-style: italic;
 }
@@ -203,7 +211,7 @@ body {
 .mission-container .mission-image {
   width: 500px;
   height: 500px;
-  background-color: #485B45;
+  box-shadow: 2px 2px 5px #a1a1a1;
 }
 
 @media screen and (max-width: 950px) {
