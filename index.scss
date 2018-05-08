@@ -2,6 +2,9 @@ $primary: #485B45;
 $secondary: #82B661;
 $background: rgb(205, 255, 230);
 
+$lgwidth: 500px;
+$lgheight: 500px;
+
 html,
 body {
   margin: 0;
@@ -29,22 +32,27 @@ body {
 
   .nav-item {
     list-style-type: none;
-    margin-left: 1rem;
   }
 }
 
 .nav-item {
 
   a {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 5rem;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-decoration: none;
     color: $background;
-
+    transition: .5s;
     &:hover {
-      color: $secondary;
+      color: $primary;
+      background-color: $background;
     }
   }
 
@@ -94,8 +102,8 @@ body {
   }
 
   .image-placeholder {
-    height: 500px;
-    width: 500px;
+    height: $lgheight;
+    width: $lgwidth;
     background-color: $secondary;
   }
 
@@ -200,8 +208,8 @@ body {
     }
   }
   .mission-image {
-    width: 500px;
-    height: 500px;
+    width: $lgwidth;
+    height: $lgheight;
     background-color: $primary;
   }
   

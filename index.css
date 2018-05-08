@@ -26,7 +26,6 @@ body {
 
 .nav-links ul .nav-item {
   list-style-type: none;
-  margin-left: 1rem;
 }
 
 .nav-item {
@@ -35,16 +34,23 @@ body {
 }
 
 .nav-item a {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 5rem;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .2rem;
   text-decoration: none;
   color: #cdffe6;
+  transition: .5s;
 }
 
 .nav-item a:hover {
-  color: #82B661;
+  color: #485B45;
+  background-color: #cdffe6;
 }
 
 .hero {
