@@ -54,14 +54,17 @@ body {
 }
 
 .hero {
-  background-color: $background;
+  background-image: url('assets/headerbg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  filter: saturate(50%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
   .hero-text {
-    margin-top: -5rem;
+    margin-top: -10rem;
     .title {
       font-weight: 700;
       font-size: 5rem;
@@ -90,22 +93,29 @@ body {
 
   }
 
+  .image-placeholder {
+    height: 500px;
+    width: 500px;
+    background-color: $secondary;
+  }
+
   @media screen and (max-width: 950px) {
     align-items: center;
     flex-direction: column;
 
     .blurb {
       width: 75%;
+      font-size: 1.5rem;
     }
-    
+
+    .image-placeholder {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 2rem;
+    }
   }
 }
 
-.image-placeholder {
-  height: 500px;
-  width: 500px;
-  background-color: $secondary;
-}
 
 .product-container {
   display: flex;
@@ -155,7 +165,8 @@ body {
   .product-pic {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background-color: $primary;
+    background-image: url('assets/productpic.jpg');
+    background-size: cover;
     height: 400px;
     width: 100%;
   }
@@ -175,7 +186,8 @@ body {
 
   .mission-text {
     font-size: 2rem;
-    width: 33%;
+    width: 50%;
+
     .title {
       font-weight: 700;
       font-style: italic;
@@ -184,19 +196,26 @@ body {
     @media screen and (max-width: 450px) {
       width: 75%;
       font-size: 1.5rem;
-      
+  
     }
   }
-  
   .mission-image {
     width: 500px;
     height: 500px;
     background-color: $primary;
   }
   
+  
   @media screen and (max-width: 950px) {
     flex-direction: column;
     align-items: center;
+
+    .mission-text {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
     .mission-image {
       width: 300px;
       height: 300px;
