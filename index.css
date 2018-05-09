@@ -189,10 +189,7 @@ body {
 }
 
 .mission-container .left {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
+  display: block !important;
   width: 50% !important;
   float: left;
 }
@@ -225,6 +222,7 @@ body {
 }
 
 .mission-container .mission-image {
+  margin: 0 auto;
   height: auto;
   width: 100%;
 }
