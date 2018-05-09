@@ -134,6 +134,7 @@ body {
   background-color: #82B661;
   padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
 .featured-products .product-link {
@@ -189,6 +190,7 @@ body {
 }
 
 .mission-container .left {
+  text-align: center;
   display: block !important;
   width: 50% !important;
   float: left;
@@ -222,9 +224,9 @@ body {
 }
 
 .mission-container .mission-image {
-  margin: 0 auto;
+  padding: 5%;
   height: auto;
-  width: 100%;
+  width: 90%;
 }
 
 @media screen and (max-width: 950px) {

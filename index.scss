@@ -145,6 +145,7 @@ body {
   background-color: $secondary;
   padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   
   .product-link {
     text-transform: uppercase;
@@ -200,6 +201,7 @@ body {
   align-items: center;
   
   .left {
+    text-align: center;
     display: block !important;
     width: 50% !important;
     float: left;
@@ -231,9 +233,9 @@ body {
   }
 
   .mission-image {
-    margin: 0 auto;
+    padding: 5%;
     height: auto;
-    width: 100%;
+    width: 90%;
   }
   
   @media screen and (max-width: 950px) {
