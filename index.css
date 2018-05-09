@@ -114,6 +114,14 @@ body {
   color: #616161;
 }
 
+@media screen and (max-width: 450px) {
+  .about-container .about-right .blurb {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .about-container {
     align-items: center;
@@ -257,5 +265,23 @@ body {
   .mission-container .right {
     width: 100% !important;
   }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container .contact-form {
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .contact-form .contact-label {
+  text-transform: uppercase;
+  color: #616161;
+  letter-spacing: .2rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

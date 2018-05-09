@@ -120,6 +120,12 @@ body {
         margin-top: 0;
         color: $textgray;
       }
+
+      @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
     }
   }
 
@@ -263,5 +269,20 @@ body {
       width: 100% !important;
     }
   }
-  
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  .contact-form {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    .contact-label {
+      text-transform: uppercase;
+      color: $textgray;
+      letter-spacing: .2rem;
+      margin-top: 1rem;
+    }
+  }
 }
