@@ -189,6 +189,7 @@ body {
 }
 
 .mission-container .left {
+  display: block;
   display: flex;
   justify-content: center;
   align-content: flex-start;
@@ -224,9 +225,7 @@ body {
 }
 
 .mission-container .mission-image {
-  padding: 10%;
   height: auto;
-  max-height: 750px;
   width: 100%;
 }
 
