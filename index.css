@@ -86,7 +86,7 @@ body {
 
 .about-container .about-left {
   display: block !important;
-  width: 50%;
+  width: 50% !important;
   float: left;
   text-align: center;
 }
@@ -100,7 +100,7 @@ body {
 .about-container .about-right {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 50% !important;
   float: right;
 }
 
