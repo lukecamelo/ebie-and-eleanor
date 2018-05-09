@@ -87,7 +87,6 @@ body {
 .about-container {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  height: 800px;
 
   display: flex;
   flex-direction: row;
@@ -95,37 +94,43 @@ body {
   align-content: center;
   align-items: center;
 
-  .blurb {
-    margin-left: 2rem;
+  .about-left {
+    display: block !important;
     width: 50%;
-    font-size: 2rem;
-
-    p {
-      margin-top: 0;
-      color: $textgray;
+    float: left;
+    text-align: center;
+    .about-image {
+      height: auto;
+      width: 90%;
+      padding: 5%;
     }
-
   }
 
-  .image-placeholder {
-    height: $lgheight;
-    width: $lgwidth;
-    background-color: $secondary;
+  .about-right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    float: right;
+
+    .blurb {
+      margin-left: 2rem;
+      font-size: 2rem;
+  
+      p {
+        margin-top: 0;
+        color: $textgray;
+      }
+    }
   }
 
   @media screen and (max-width: 950px) {
     align-items: center;
     flex-direction: column;
-
-    .blurb {
-      width: 75%;
-      font-size: 1.5rem;
+    .about-left {
+      width: 100% !important;
     }
-
-    .image-placeholder {
-      width: 300px;
-      height: 300px;
-      margin-bottom: 2rem;
+    .about-right {
+      width: 100% !important;
     }
   }
 }
@@ -153,6 +158,8 @@ body {
     text-decoration: none;
     letter-spacing: .2rem;
     transition: .2s;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06),
+    1px 3px 8px rgba(39,44,49,.03);
     
     color: $background;
     background-color: $primary;
@@ -177,7 +184,11 @@ body {
 .product {
   width: 400px;
   
+  .product-name {
+    color: white;
+  }
   .price {
+    color: white;
     font-weight: 300i;
   }
   
@@ -186,12 +197,20 @@ body {
     background-size: cover;
     height: auto;
     width: 100%;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06),
+    1px 3px 8px rgba(39,44,49,.03);
   }
   
   @media screen and (max-width: 450px) {
     width: 75%;
     height: 50%;
   }
+}
+
+.title {
+  color: #2f302f;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .mission-container {
@@ -220,11 +239,6 @@ body {
     font-size: 2rem;
     width: 90%;
     
-    .title {
-      color: #2f302f;
-      font-weight: 700;
-      font-style: italic;
-    }
     
     @media screen and (max-width: 450px) {
       font-size: 1.5rem;

@@ -77,7 +77,6 @@ body {
 .about-container {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  height: 800px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -85,21 +84,34 @@ body {
   align-items: center;
 }
 
-.about-container .blurb {
-  margin-left: 2rem;
+.about-container .about-left {
+  display: block !important;
   width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.about-container .about-left .about-image {
+  height: auto;
+  width: 90%;
+  padding: 5%;
+}
+
+.about-container .about-right {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  float: right;
+}
+
+.about-container .about-right .blurb {
+  margin-left: 2rem;
   font-size: 2rem;
 }
 
-.about-container .blurb p {
+.about-container .about-right .blurb p {
   margin-top: 0;
   color: #616161;
-}
-
-.about-container .image-placeholder {
-  height: 500px;
-  width: 500px;
-  background-color: #82B661;
 }
 
 @media screen and (max-width: 950px) {
@@ -107,14 +119,11 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  .about-container .blurb {
-    width: 75%;
-    font-size: 1.5rem;
+  .about-container .about-left {
+    width: 100% !important;
   }
-  .about-container .image-placeholder {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 2rem;
+  .about-container .about-right {
+    width: 100% !important;
   }
 }
 
@@ -143,6 +152,7 @@ body {
   text-decoration: none;
   letter-spacing: .2rem;
   transition: .2s;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
   color: #cdffe6;
   background-color: #485B45;
   display: flex;
@@ -164,7 +174,12 @@ body {
   width: 400px;
 }
 
+.product .product-name {
+  color: white;
+}
+
 .product .price {
+  color: white;
   font-weight: 300i;
 }
 
@@ -173,6 +188,7 @@ body {
   background-size: cover;
   height: auto;
   width: 100%;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
 }
 
 @media screen and (max-width: 450px) {
@@ -180,6 +196,12 @@ body {
     width: 75%;
     height: 50%;
   }
+}
+
+.title {
+  color: #2f302f;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .mission-container {
@@ -208,12 +230,6 @@ body {
   color: #616161;
   font-size: 2rem;
   width: 90%;
-}
-
-.mission-container .mission-text .title {
-  color: #2f302f;
-  font-weight: 700;
-  font-style: italic;
 }
 
 @media screen and (max-width: 450px) {
