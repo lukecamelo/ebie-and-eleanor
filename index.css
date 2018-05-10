@@ -84,6 +84,10 @@ body {
   align-items: center;
 }
 
+.about-container .about {
+  font-size: 10px;
+}
+
 .about-container .about-left {
   display: block !important;
   float: left;
