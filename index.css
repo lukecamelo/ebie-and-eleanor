@@ -271,14 +271,21 @@ body {
 
 .contact-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #cdffe6;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
-.contact-container .contact-form {
+.contact-container h1 {
   padding-top: 3%;
+  color: #454746;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contact-container .contact-form {
   padding-bottom: 3%;
   width: 950px;
   display: flex;
