@@ -111,7 +111,7 @@ body {
 
 .about-container .about-right .blurb p {
   margin-top: 0;
-  color: #616161;
+  color: #454746;
 }
 
 @media screen and (max-width: 450px) {
@@ -149,7 +149,7 @@ body {
 }
 
 .featured-products {
-  background-color: #82B661;
+  background-color: #cdffe6;
   padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
@@ -162,7 +162,7 @@ body {
   transition: .2s;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
   color: #cdffe6;
-  background-color: #485B45;
+  background-color: #82B661;
   display: flex;
   justify-content: center;
   justify-self: center;
@@ -175,7 +175,7 @@ body {
 
 .featured-products .product-link:hover {
   transform: translateY(2px);
-  color: #82B661;
+  color: #485B45;
 }
 
 .product {
@@ -183,15 +183,17 @@ body {
 }
 
 .product .product-name {
-  color: white;
+  color: #454746;
 }
 
 .product .price {
-  color: white;
+  color: #454746;
   font-weight: 300i;
 }
 
 .product .product-pic {
+  background-color: #fafffd;
+  padding: 10px;
   margin-top: 3rem;
   background-size: cover;
   height: auto;
@@ -235,7 +237,7 @@ body {
 }
 
 .mission-container .mission-text {
-  color: #616161;
+  color: #454746;
   font-size: 2rem;
   width: 90%;
 }
@@ -270,9 +272,14 @@ body {
 .contact-container {
   display: flex;
   justify-content: center;
+  background-color: #cdffe6;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
 .contact-container .contact-form {
+  padding-top: 3%;
+  padding-bottom: 3%;
   width: 950px;
   display: flex;
   flex-direction: column;
@@ -280,8 +287,18 @@ body {
 
 .contact-container .contact-form .contact-label {
   text-transform: uppercase;
-  color: #616161;
+  color: #454746;
   letter-spacing: .2rem;
   margin-top: 1rem;
+}
+
+.contact-container .contact-form .form-input {
+  padding: 5px;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.contact-container .contact-form .form-textarea {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=index.css.map */

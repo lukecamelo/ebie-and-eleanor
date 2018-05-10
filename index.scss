@@ -5,7 +5,7 @@ $background: rgb(205, 255, 230);
 $lgwidth: 500px;
 $lgheight: 500px;
 
-$textgray: #616161;
+$textgray: #454746;
 
 html,
 body {
@@ -153,7 +153,7 @@ body {
 }
 
 .featured-products {
-  background-color: $secondary;
+  background-color: $background;
   padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
@@ -167,11 +167,11 @@ body {
     1px 3px 8px rgba(39,44,49,.03);
     
     color: $background;
-    background-color: $primary;
+    background-color: $secondary;
     
     &:hover {
       transform: translateY(2px);
-      color: $secondary;
+      color: $primary;
     }
     
     display: flex;
@@ -190,14 +190,17 @@ body {
   width: 400px;
   
   .product-name {
-    color: white;
+    color: $textgray;
   }
+
   .price {
-    color: white;
+    color: $textgray;
     font-weight: 300i;
   }
   
   .product-pic {
+    background-color: rgb(250, 255, 253);
+    padding: 10px;
     margin-top: 3rem;
     background-size: cover;
     height: auto;
@@ -274,15 +277,33 @@ body {
 .contact-container {
   display: flex;
   justify-content: center;
+  background-color: $background;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+
   .contact-form {
+    padding-top: 3%;
+    padding-bottom: 3%;
     width: 950px;
     display: flex;
     flex-direction: column;
+
     .contact-label {
       text-transform: uppercase;
       color: $textgray;
       letter-spacing: .2rem;
       margin-top: 1rem;
     }
+
+    .form-input {
+      padding: 5px;
+      height: 3rem;
+      font-size: 2rem;
+    }
+
+    .form-textarea {
+      font-size: 1.5rem;
+    }
   }
+
 }
