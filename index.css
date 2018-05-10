@@ -86,26 +86,24 @@ body {
 
 .about-container .about-left {
   display: block !important;
-  width: 50% !important;
   float: left;
   text-align: center;
 }
 
 .about-container .about-left .about-image {
   height: auto;
-  width: 90%;
-  padding: 5%;
+  width: 75%;
+  padding: 6%;
 }
 
 .about-container .about-right {
   display: flex;
-  justify-content: center;
+  justify-items: flex-start;
   width: 50% !important;
   float: right;
 }
 
 .about-container .about-right .blurb {
-  margin-left: 2rem;
   font-size: 2rem;
 }
 
@@ -132,6 +130,10 @@ body {
   }
   .about-container .about-right {
     width: 100% !important;
+  }
+  .about-container .about-right .blurb {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -187,7 +189,6 @@ body {
 .product .product-pic {
   background-color: #fafffd;
   padding: 10px;
-  margin-top: 3rem;
   background-size: cover;
   height: auto;
   width: 100%;
@@ -258,9 +259,9 @@ body {
 }
 
 .mission-container .mission-image {
-  padding: 5%;
+  padding: 12.5%;
   height: auto;
-  width: 90%;
+  width: 75%;
 }
 
 @media screen and (max-width: 950px) {
@@ -286,18 +287,18 @@ body {
 }
 
 .contact-container h1 {
-  padding-top: 3%;
+  margin-top: 0;
   color: #454746;
   font-size: 3rem;
   font-weight: 300;
 }
 
 .contact-container .contact-form {
-  background-color: #f9f9f9;
-  padding: 3%;
+  padding: 8%;
   width: 50%;
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
 }
 
 .contact-container .contact-form .contact-label {
@@ -322,6 +323,29 @@ body {
 
 .contact-container .contact-form .form-textarea {
   font-size: 1.5rem;
+}
+
+.contact-container .contact-form .contact-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  transition: .2s;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  color: #cdffe6;
+  background-color: #82B661;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+}
+
+.contact-container .contact-form .contact-button:hover {
+  transform: translateY(2px);
+  color: #485B45;
 }
 
 @media screen and (max-width: 450px) {
