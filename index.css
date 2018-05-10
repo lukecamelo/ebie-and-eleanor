@@ -326,6 +326,7 @@ body {
 }
 
 .contact-container .contact-form .contact-button {
+  margin-top: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .2rem;
@@ -337,8 +338,6 @@ body {
   justify-content: center;
   justify-self: center;
   align-items: center;
-  margin-bottom: 2rem;
-  margin: 0 auto;
   width: 200px;
   height: 50px;
 }
