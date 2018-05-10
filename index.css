@@ -122,29 +122,22 @@ body {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1250px) {
   .about-container {
     align-items: center;
     flex-direction: column;
   }
   .about-container .about-left {
-    width: 100% !important;
+    width: 75% !important;
   }
   .about-container .about-right {
     width: 100% !important;
   }
 }
 
-.product-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 1250px) {
-  .product-container {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 950px) {
+  .about-container .about-left {
+    width: 100% !important;
   }
 }
 
@@ -179,7 +172,7 @@ body {
 }
 
 .product {
-  width: 400px;
+  width: 25%;
 }
 
 .product .product-name {
@@ -201,10 +194,23 @@ body {
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1250px) {
   .product {
     width: 75%;
-    height: 50%;
+    height: auto;
+  }
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1250px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -216,6 +222,7 @@ body {
 
 .mission-container {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -281,13 +288,14 @@ body {
 .contact-container h1 {
   padding-top: 3%;
   color: #454746;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 
 .contact-container .contact-form {
-  padding-bottom: 3%;
-  width: 950px;
+  background-color: #f9f9f9;
+  padding: 3%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -297,9 +305,16 @@ body {
   color: #454746;
   letter-spacing: .2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.contact-container .contact-form .form-input {
+.contact-container .contact-form .form-name {
+  padding: 5px;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.contact-container .contact-form .form-email {
   padding: 5px;
   height: 3rem;
   font-size: 2rem;

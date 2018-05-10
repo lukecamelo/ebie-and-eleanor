@@ -129,34 +129,30 @@ body {
     }
   }
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1250px) {
     align-items: center;
     flex-direction: column;
     .about-left {
-      width: 100% !important;
+      width: 75% !important;
     }
     .about-right {
       width: 100% !important;
     }
   }
-}
-
-.product-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @media screen and (max-width: 1250px) {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (max-width: 950px) {
+    .about-left {
+      width: 100% !important;
+    }
   }
 }
+
 
 .featured-products {
   background-color: $background;
   padding: 65px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  
   
   .product-link {
     text-transform: uppercase;
@@ -187,12 +183,12 @@ body {
 }
 
 .product {
-  width: 400px;
+  width: 25%;
   
   .product-name {
     color: $textgray;
   }
-
+  
   .price {
     color: $textgray;
     font-weight: 300i;
@@ -209,9 +205,20 @@ body {
     1px 3px 8px rgba(39,44,49,.03);
   }
   
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 1250px) {
     width: 75%;
-    height: 50%;
+    height: auto;
+  }
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -223,6 +230,7 @@ body {
 
 .mission-container {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -281,16 +289,18 @@ body {
   background-color: $background;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-
+  
   h1 {
     padding-top: 3%;
     color: $textgray;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
   }
+  
   .contact-form {
-    padding-bottom: 3%;
-    width: 950px;
+    background-color: #f9f9f9;
+    padding: 3%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 
@@ -299,9 +309,16 @@ body {
       color: $textgray;
       letter-spacing: .2rem;
       margin-top: 1rem;
+      margin-bottom: 1rem
     }
 
-    .form-input {
+    .form-name {
+      padding: 5px;
+      height: 3rem;
+      font-size: 2rem;
+    }
+
+    .form-email {
       padding: 5px;
       height: 3rem;
       font-size: 2rem;
@@ -311,5 +328,4 @@ body {
       font-size: 1.5rem;
     }
   }
-
 }
