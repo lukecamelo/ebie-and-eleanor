@@ -323,4 +323,15 @@ body {
 .contact-container .contact-form .form-textarea {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 450px) {
+  .contact-container .contact-form .form-name {
+    height: 1.5em;
+    font-size: 1rem;
+  }
+  .contact-container .contact-form .form-email {
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

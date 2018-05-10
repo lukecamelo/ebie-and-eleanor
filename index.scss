@@ -327,5 +327,16 @@ body {
     .form-textarea {
       font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 450px) {
+      .form-name {
+        height: 1.5em;
+        font-size: 1rem;
+      }
+      .form-email {
+        height: 1.5rem;
+        font-size: 1rem;
+      }
+    }
   }
 }
