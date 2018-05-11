@@ -99,17 +99,17 @@
   <section class='contact-section'>
 
     <div class="contact-container">
-      <form class='contact-form'>
+      <form action="https://formspree.io/llukecamelo@gmail.com" method="POST" class='contact-form'>
         <h1>Contact us!</h1>
         <label class='contact-label'>Your name</label>
-        <input type="text" class='form-name'>
+        <input type="text" name='name' placeholder='your name' class='form-name'>
 
         <label class='contact-label'>Your e-mail</label>
-        <input type="text" class='form-email'>
+        <input type="email" name='_replyto' placeholder='your email' class='form-email'>
 
         <label class='contact-label'>Your message</label>
-        <textarea cols="30" rows="10" class='form-textarea'></textarea>
-        <a href="" class='contact-button'>send</a>
+        <textarea cols="30" rows="10" placeholder='your message!' name='message' class='form-textarea'></textarea>
+        <button type="submit" class='contact-button'>Send!</button>
       </form>
     </div>
 
