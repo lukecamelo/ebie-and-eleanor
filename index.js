@@ -41,3 +41,13 @@ sr.reveal('.p-anim', 50)
 sr.reveal('.p-anim1', {origin: 'bottom'})
 sr.reveal('.p-anim2', {origin: 'bottom'})
 sr.reveal('.p-anim3', {origin: 'bottom'})
+
+sr.reveal('.left')
+sr.reveal('.right')
+
+sr.reveal('.contact-label', 50)
+sr.reveal('.form-name')
+sr.reveal('.form-email')
+sr.reveal('.form-textarea')
+sr.reveal('.contact-button')
+sr.reveal('.contact-h1')
