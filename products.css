@@ -437,6 +437,11 @@ body {
   }
 }
 
+.prod-title {
+  font-size: 5rem;
+  color: #454746;
+}
+
 .product-list {
   display: flex;
   flex-direction: row;
@@ -445,9 +450,18 @@ body {
 }
 
 .product-list .product {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.product-list .product h2, .product-list .product h3 {
+  margin-top: 0;
+}
+
+.product-list .product img {
   margin-bottom: 2rem;
   height: auto;
   width: 350px;
-  background: #cdffe6;
 }
 /*# sourceMappingURL=products.css.map */
