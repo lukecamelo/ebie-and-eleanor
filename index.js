@@ -5,7 +5,8 @@ function myFunction() {
   } else {
       x.className = "topnav";
   }
-} 
+}
+
 window.sr = ScrollReveal()
 
 const aboutPic = document.querySelector('.about-left')
