@@ -67,7 +67,7 @@ body {
 }
 
 .hero {
-  background-image: url("assets/headerbg.jpg");
+  background-image: url("assets/forest.jpg");
   background-size: cover;
   background-attachment: fixed;
   filter: saturate(50%);
