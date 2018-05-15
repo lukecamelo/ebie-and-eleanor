@@ -89,8 +89,13 @@ body {
 
 .hero .hero-text .title {
   font-family: 'Playfair Display', serif;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 5rem;
+}
+
+.hero .hero-text .subtitle {
+  font-weight: 300;
+  font-family: 'Playfair Display', serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -184,7 +189,7 @@ body {
 }
 
 .featured-products {
-  background-color: #425444;
+  background-color: #485B45;
   padding: 65px 10px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
@@ -256,9 +261,13 @@ body {
   }
 }
 
+.mission-statement {
+  background-image: url(assets/forest.jpg);
+  background-position: fixed;
+  background-size: cover;
+}
+
 .mission-container {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -280,13 +289,13 @@ body {
 }
 
 .mission-container .mission-text {
-  color: #454746;
+  color: white;
   font-size: 2rem;
   width: 90%;
 }
 
 .mission-container .mission-text .title {
-  color: black;
+  color: white;
   font-family: 'Playfair Display' , serif;
   font-weight: bold;
 }
