@@ -126,6 +126,7 @@ body {
   color: white;
 
   .hero-text {
+    text-align: center;
     margin-top: -10rem;
     color: white;
     .title {
@@ -133,6 +134,10 @@ body {
       font-weight: bold;
       font-size: 5rem;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-size: 100% !important;
   }
 
 }
