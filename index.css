@@ -73,6 +73,7 @@ body {
   background-image: url("assets/forest.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +93,7 @@ body {
 }
 
 .about-container {
-  background: #778045;
+  background: #485B45;
   color: white;
   display: flex;
   flex-direction: row;
@@ -114,9 +115,9 @@ body {
 }
 
 .about-container .about-left .about-image {
+  background-color: white;
   height: auto;
   width: 75%;
-  padding: 6%;
 }
 
 .about-container .about-right {
@@ -176,7 +177,7 @@ body {
 }
 
 .featured-products {
-  background-color: #cdffe6;
+  background-color: #425444;
   padding: 65px 10px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
@@ -210,11 +211,11 @@ body {
 }
 
 .product .product-name {
-  color: #454746;
+  color: white;
 }
 
 .product .price {
-  color: #454746;
+  color: white;
   font-weight: 300i;
 }
 
@@ -238,6 +239,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -279,7 +281,7 @@ body {
 .mission-container .mission-text .title {
   color: black;
   font-family: 'Playfair Display' , serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 450px) {
@@ -291,9 +293,9 @@ body {
 }
 
 .mission-container .mission-image {
-  padding: 12.5%;
+  padding: 5%;
   height: auto;
-  width: 75%;
+  width: 50%;
 }
 
 @media screen and (max-width: 950px) {
@@ -313,7 +315,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #cdffe6;
+  background-color: #485B45;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
