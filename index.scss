@@ -71,7 +71,6 @@ body {
   background-image: url('assets/forest.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +79,7 @@ body {
 
   .hero-text {
     text-align: center;
-    margin-top: -10rem;
+    margin-top: -5rem;
     color: white;
     .title {
       font-family: 'Playfair Display', serif;
@@ -95,7 +94,7 @@ body {
   }
 
   @media screen and (max-width: 767px) {
-    background-size: 100% !important;
+    // background-size: 100% !important;
   }
 
 }
@@ -134,18 +133,22 @@ body {
     margin-bottom: 5rem;
     display: flex;
     justify-items: flex-start;
+    align-content: flex-start;
     width: 50% !important;
     float: right;
 
     .blurb {
       font-size: 2rem;
       .title {
+        margin-top: 0;
         font-family: 'Playfair Display' , serif;
         font-weight: 700;
+        margin-bottom: 1rem;
       }
       p {
         margin-top: 0;
         color: white;
+        font-size: 1.5rem;
       }
 
       @media screen and (max-width: 450px) {
@@ -183,7 +186,7 @@ body {
 
 .featured-products {
   background-color: $secondary;
-  padding: 65px 10px;
+  padding: 100px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
@@ -199,11 +202,11 @@ body {
     1px 3px 8px rgba(39,44,49,.03);
     
     color: $background;
-    background-color: $secondary;
+    background-color: $primary;
     
     &:hover {
       transform: translateY(2px);
-      color: $primary;
+      color: $secondary;
     }
     
     display: flex;
@@ -342,7 +345,35 @@ body {
       justify-content: space-around;
 
       .icon-block {
-        width: 33%;
+        text-align: center;
+        width: 25%;
+
+        .icon-title {
+          font-weight: 700;
+          font-size: 2rem;
+          margin-bottom: 0;
+          margin-top: 5px;
+          font-style: italic;
+        }
+      }
+
+      @media screen and (max-width: 950px) {
+        flex-direction: column;
+        align-items: center;
+        .icon-block {
+          width: 50%;
+        }
+      }
+    }
+
+    .statement-container {
+      .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.5rem;
       }
     }
   }

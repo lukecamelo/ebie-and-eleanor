@@ -74,7 +74,6 @@ body {
   background-image: url("assets/forest.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +83,7 @@ body {
 
 .hero .hero-text {
   text-align: center;
-  margin-top: -10rem;
+  margin-top: -5rem;
   color: white;
 }
 
@@ -97,12 +96,6 @@ body {
 .hero .hero-text .subtitle {
   font-weight: 300;
   font-family: 'Playfair Display', serif;
-}
-
-@media screen and (max-width: 767px) {
-  .hero {
-    background-size: 100% !important;
-  }
 }
 
 .about-container {
@@ -138,6 +131,7 @@ body {
   margin-bottom: 5rem;
   display: flex;
   justify-items: flex-start;
+  align-content: flex-start;
   width: 50% !important;
   float: right;
 }
@@ -147,13 +141,16 @@ body {
 }
 
 .about-container .about-right .blurb .title {
+  margin-top: 0;
   font-family: 'Playfair Display' , serif;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .about-container .about-right .blurb p {
   margin-top: 0;
   color: white;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 450px) {
@@ -191,7 +188,7 @@ body {
 
 .featured-products {
   background-color: #82B661;
-  padding: 65px 10px;
+  padding: 100px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
@@ -203,7 +200,7 @@ body {
   transition: .2s;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
   color: #cdffe6;
-  background-color: #82B661;
+  background-color: #485B45;
   display: flex;
   justify-content: center;
   justify-self: center;
@@ -216,7 +213,7 @@ body {
 
 .featured-products .product-link:hover {
   transform: translateY(2px);
-  color: #485B45;
+  color: #82B661;
 }
 
 .product {
@@ -344,7 +341,36 @@ body {
 }
 
 .mission2 .miss-container .icon-container .icon-block {
-  width: 33%;
+  text-align: center;
+  width: 25%;
+}
+
+.mission2 .miss-container .icon-container .icon-block .icon-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 950px) {
+  .mission2 .miss-container .icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission2 .miss-container .icon-container .icon-block {
+    width: 50%;
+  }
+}
+
+.mission2 .miss-container .statement-container .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mission2 .miss-container .statement-container p {
+  font-size: 1.5rem;
 }
 
 .contact-container {
