@@ -43,8 +43,11 @@ sr.reveal('.p-anim1', {origin: 'bottom'})
 sr.reveal('.p-anim2', {origin: 'bottom'})
 sr.reveal('.p-anim3', {origin: 'bottom'})
 
-sr.reveal('.left')
-sr.reveal('.right')
+// old mission statement section
+// sr.reveal('.left')
+// sr.reveal('.right')
+
+sr.reveal('.miss-fade', 250)
 
 sr.reveal('.contact-label', 50)
 sr.reveal('.form-name')

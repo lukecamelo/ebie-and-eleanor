@@ -338,6 +338,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 .mission2 .miss-container .icon-container .icon-block {
@@ -359,18 +360,22 @@ body {
     align-items: center;
   }
   .mission2 .miss-container .icon-container .icon-block {
-    width: 50%;
+    width: 90%;
   }
 }
 
 .mission2 .miss-container .statement-container .title {
+  text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .mission2 .miss-container .statement-container p {
   font-size: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .contact-container {
