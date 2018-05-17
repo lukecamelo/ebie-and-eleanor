@@ -334,7 +334,7 @@ body {
   padding-bottom: 3rem;
 
   .miss-container {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,13 +362,16 @@ body {
         flex-direction: column;
         align-items: center;
         .icon-block {
-          width: 90%;
+          width: 100%;
+          p {
+            width: 300px;
+          }
         }
       }
     }
 
     .statement-container {
-
+      width: 100%;
       .title {
         text-align: center;
         font-family: 'Playfair Display', serif;

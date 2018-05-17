@@ -328,7 +328,7 @@ body {
 }
 
 .mission2 .miss-container {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,8 +360,15 @@ body {
     align-items: center;
   }
   .mission2 .miss-container .icon-container .icon-block {
-    width: 90%;
+    width: 100%;
   }
+  .mission2 .miss-container .icon-container .icon-block p {
+    width: 300px;
+  }
+}
+
+.mission2 .miss-container .statement-container {
+  width: 100%;
 }
 
 .mission2 .miss-container .statement-container .title {
