@@ -421,4 +421,14 @@ body {
     font-size: 1rem;
   }
 }
+
+.footer {
+  background-color: #17412f;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.footer h2 {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=index.css.map */
