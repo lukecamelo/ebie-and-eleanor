@@ -170,6 +170,9 @@ body {
     margin-bottom: 0;
     width: 75% !important;
   }
+  .about-container .about-left .about-image {
+    margin-bottom: 1.5rem;
+  }
   .about-container .about-right {
     margin-top: 0;
     width: 100% !important;
@@ -259,66 +262,6 @@ body {
   }
 }
 
-.mission-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.mission-container .left {
-  text-align: center;
-  display: block !important;
-  width: 50% !important;
-  float: left;
-}
-
-.mission-container .right {
-  display: flex;
-  justify-content: center;
-  width: 50% !important;
-  float: right;
-}
-
-.mission-container .mission-text {
-  color: #454746;
-  font-size: 2rem;
-  width: 90%;
-}
-
-.mission-container .mission-text .title {
-  color: #454746;
-  font-family: 'Playfair Display' , serif;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 450px) {
-  .mission-container .mission-text {
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-
-.mission-container .mission-image {
-  padding: 5%;
-  height: auto;
-  width: 50%;
-}
-
-@media screen and (max-width: 1250px) {
-  .mission-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .mission-container .left {
-    width: 100% !important;
-  }
-  .mission-container .right {
-    width: 100% !important;
-  }
-}
-
 .mission2 {
   display: flex;
   justify-content: center;
@@ -368,10 +311,11 @@ body {
 }
 
 .mission2 .miss-container .statement-container {
-  width: 100%;
+  width: 70%;
 }
 
 .mission2 .miss-container .statement-container .title {
+  margin-top: 0;
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
@@ -383,6 +327,15 @@ body {
   font-size: 1.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .mission2 .miss-container .statement-container {
+    width: 100%;
+  }
+  .mission2 .miss-container .statement-container .title {
+    font-size: 2rem;
+  }
 }
 
 .contact-container {
