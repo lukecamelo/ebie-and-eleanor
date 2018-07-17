@@ -45,7 +45,9 @@ body {
   display: none;
 }
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -54,7 +56,9 @@ body {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -96,7 +100,6 @@ body {
   @media screen and (max-width: 767px) {
     // background-size: 100% !important;
   }
-
 }
 
 .about-container {
@@ -112,7 +115,7 @@ body {
   .about {
     font-size: 10px;
   }
-  
+
   .about-left {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -141,7 +144,7 @@ body {
       font-size: 2rem;
       .title {
         margin-top: 0;
-        font-family: 'Playfair Display' , serif;
+        font-family: 'Playfair Display', serif;
         font-weight: 700;
         margin-bottom: 1rem;
       }
@@ -186,7 +189,6 @@ body {
   }
 }
 
-
 .featured-products {
   background-color: $secondary;
   padding: 100px 10px;
@@ -194,31 +196,30 @@ body {
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  
-  
+
   .product-link {
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: .2rem;
-    transition: .2s;
-    box-shadow: 8px 14px 38px rgba(39,44,49,.06),
-    1px 3px 8px rgba(39,44,49,.03);
-    
+    letter-spacing: 0.2rem;
+    transition: 0.2s;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+      1px 3px 8px rgba(39, 44, 49, 0.03);
+
     color: $background;
     background-color: $primary;
-    
+
     &:hover {
       transform: translateY(2px);
       color: $secondary;
     }
-    
+
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
     margin-bottom: 2rem;
     margin: 0 auto;
-    
+
     width: 200px;
     height: 50px;
   }
@@ -226,26 +227,26 @@ body {
 
 .product {
   width: 25%;
-  
+
   .product-name {
     color: white;
   }
-  
+
   .price {
     color: white;
     font-weight: 300i;
   }
-  
+
   .product-pic {
     background-color: rgb(250, 255, 253);
     padding: 10px;
     background-size: cover;
     height: auto;
     width: 100%;
-    box-shadow: 8px 14px 38px rgba(39,44,49,.06),
-    1px 3px 8px rgba(39,44,49,.03);
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+      1px 3px 8px rgba(39, 44, 49, 0.03);
   }
-  
+
   @media screen and (max-width: 1250px) {
     width: 75%;
     height: auto;
@@ -323,7 +324,7 @@ body {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
       }
-      
+
       @media screen and (max-width: 950px) {
         width: 100%;
         .title {
@@ -331,9 +332,7 @@ body {
         }
       }
     }
-    
   }
-
 }
 
 .contact-container {
@@ -343,27 +342,27 @@ body {
   background-color: $secondary;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-  
+
   h1 {
     margin-top: 0;
     color: $textgray;
     font-size: 3rem;
     font-weight: 300;
   }
-  
+
   .contact-form {
     padding: 8%;
     width: 50%;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
-    
+
     .contact-label {
       text-transform: uppercase;
       color: $textgray;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       margin-top: 1rem;
-      margin-bottom: 1rem
+      margin-bottom: 1rem;
     }
 
     .form-name {
@@ -386,24 +385,24 @@ body {
       margin-top: 1rem;
       text-transform: uppercase;
       text-decoration: none;
-      letter-spacing: .2rem;
-      transition: .2s;
-      box-shadow: 8px 14px 38px rgba(39,44,49,.06),
-      1px 3px 8px rgba(39,44,49,.03);
-      
+      letter-spacing: 0.2rem;
+      transition: 0.2s;
+      box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+        1px 3px 8px rgba(39, 44, 49, 0.03);
+
       color: $background;
       background-color: $secondary;
-      
+
       &:hover {
         transform: translateY(2px);
         color: $primary;
       }
-      
+
       display: flex;
       justify-content: center;
       justify-self: center;
       align-items: center;
-      
+
       width: 200px;
       height: 50px;
     }
