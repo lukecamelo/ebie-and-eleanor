@@ -1,9 +1,9 @@
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-      x.className += " responsive";
+  var x = document.getElementById('myTopnav')
+  if (x.className === 'topnav') {
+    x.className += ' responsive'
   } else {
-      x.className = "topnav";
+    x.className = 'topnav'
   }
 }
 
@@ -16,7 +16,7 @@ const prod1 = document.querySelector('.p1')
 const prod2 = document.querySelector('.p2')
 const prod3 = document.querySelector('.p3')
 
-if (window.matchMedia("(max-width: 950px)").matches) {
+if (window.matchMedia('(max-width: 950px)').matches) {
   aboutPic.classList.remove('about')
   aboutBlurb.classList.remove('about')
 
@@ -26,22 +26,20 @@ if (window.matchMedia("(max-width: 950px)").matches) {
   prod1.classList.remove('p-anim')
   prod2.classList.remove('p-anim')
   prod3.classList.remove('p-anim')
-  
+
   prod1.classList.add('p-anim1')
   prod2.classList.add('p-anim2')
   prod3.classList.add('p-anim3')
-
-  
 }
 
-sr.reveal('.about', {origin: 'left', rotate: {x: 2, y: 2, z: 2}}, 50)
-sr.reveal('.a1', {origin: 'left'})
-sr.reveal('.a2', {origin: 'right'})
+sr.reveal('.about', { origin: 'left', rotate: { x: 2, y: 2, z: 2 } }, 50)
+sr.reveal('.a1', { origin: 'left' })
+sr.reveal('.a2', { origin: 'right' })
 
 sr.reveal('.p-anim', 50)
-sr.reveal('.p-anim1', {origin: 'bottom'})
-sr.reveal('.p-anim2', {origin: 'bottom'})
-sr.reveal('.p-anim3', {origin: 'bottom'})
+sr.reveal('.p-anim1', { origin: 'bottom' })
+sr.reveal('.p-anim2', { origin: 'bottom' })
+sr.reveal('.p-anim3', { origin: 'bottom' })
 
 // old mission statement section
 // sr.reveal('.left')
