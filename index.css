@@ -511,12 +511,13 @@ body {
 }
 
 .footer {
-  background-color: #17412f;
+  text-align: center;
+  background-color: #1e2b22;
   height: 100%;
-  margin-bottom: 0;
+  color: #82B661;
 }
 
 .footer h2 {
-  margin-bottom: 0;
+  padding: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
