@@ -12,9 +12,10 @@ body {
 
 .product-header {
   .prod-title {
+    font-family: 'Playfair Display', serif;
     margin-left: 2rem;
     font-size: 5rem;
-    color: $textgray;
+    color: white;
   }
 }
 
@@ -39,10 +40,12 @@ body {
   .product {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    margin: 2%;
+    padding: 10px;
     flex-grow: 1;
     flex-basis: 21%;
-    color: white;
+    color: $primary;
+    background-color: white;
 
     @media (max-width: 920px) {
       flex-grow: 1;
@@ -57,6 +60,7 @@ body {
     .product-info {
       display: flex;
       flex-direction: column;
+      font-family: 'Fauna One', sans-serif;
     }
 
     .product-image {
