@@ -530,6 +530,10 @@ body {
   background-color: #82B661;
 }
 
+h2, h3 {
+  margin: 5px;
+}
+
 .product-header .prod-title {
   font-family: 'Playfair Display', serif;
   margin-left: 2rem;
@@ -582,6 +586,8 @@ body {
       flex-basis: 21%;
   color: #485B45;
   background-color: white;
+  -webkit-box-shadow: 0px 1px 1px 0px #485B45;
+          box-shadow: 0px 1px 1px 0px #485B45;
 }
 
 @media (max-width: 920px) {
