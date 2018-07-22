@@ -40,6 +40,7 @@ sr.reveal('.p-anim', 50)
 sr.reveal('.p-anim1', { origin: 'bottom' })
 sr.reveal('.p-anim2', { origin: 'bottom' })
 sr.reveal('.p-anim3', { origin: 'bottom' })
+sr.reveal('.product', { origin: 'bottom' }, 50)
 
 // old mission statement section
 // sr.reveal('.left')
