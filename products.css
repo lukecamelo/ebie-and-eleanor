@@ -530,7 +530,8 @@ body {
   background-color: #82B661;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin: 5px;
 }
 
