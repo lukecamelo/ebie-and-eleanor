@@ -73,18 +73,17 @@ body {
 .hero {
   background-image: url('assets/forest.jpg');
   background-size: cover;
-  /* background-attachment: fixed; */
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
 }
 
 .hero .hero-text {
