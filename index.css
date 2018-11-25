@@ -8,7 +8,7 @@ body {
 }
 
 .topnav {
-  background-color: #485B45;
+  background-color: #485b45;
   overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #82B661;
+  background-color: #82b661;
   color: white;
 }
 
@@ -71,18 +71,18 @@ body {
 }
 
 .hero {
-  background-image: url("assets/forest.jpg");
+  background-image: url('assets/forest.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   color: white;
 }
@@ -112,16 +112,16 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about-container .about {
@@ -150,7 +150,7 @@ body {
   display: flex;
   justify-items: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   width: 50% !important;
   float: right;
 }
@@ -183,12 +183,12 @@ body {
 @media screen and (max-width: 1250px) {
   .about-container {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .about-container .about-left {
     margin-bottom: 0;
@@ -214,7 +214,7 @@ body {
 }
 
 .featured-products {
-  background-color: #82B661;
+  background-color: #82b661;
   padding: 100px 10px;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
@@ -226,20 +226,22 @@ body {
   letter-spacing: 0.2rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-          box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
   color: #cdffe6;
-  background-color: #485B45;
+  background-color: #485b45;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   justify-self: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 2rem;
   margin: 0 auto;
   width: 200px;
@@ -248,8 +250,8 @@ body {
 
 .featured-products .product-link:hover {
   -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  color: #82B661;
+  transform: translateY(2px);
+  color: #82b661;
 }
 
 .product {
@@ -271,8 +273,10 @@ body {
   background-size: cover;
   height: auto;
   width: 100%;
-  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-          box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
 }
 
 @media screen and (max-width: 1250px) {
@@ -288,10 +292,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-bottom: 1rem;
 }
 
@@ -299,11 +303,11 @@ body {
   .product-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -312,8 +316,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: white;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -326,11 +330,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mission2 .miss-container .icon-container {
@@ -339,10 +343,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-bottom: 3rem;
 }
 
@@ -363,11 +367,11 @@ body {
   .mission2 .miss-container .icon-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .mission2 .miss-container .icon-container .icon-block {
     width: 100%;
@@ -410,13 +414,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #82B661;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #82b661;
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
@@ -436,8 +440,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #f9f9f9;
 }
 
@@ -472,28 +476,30 @@ body {
   letter-spacing: 0.2rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-          box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
   color: #cdffe6;
-  background-color: #82B661;
+  background-color: #82b661;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   justify-self: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 200px;
   height: 50px;
 }
 
 .contact-container .contact-form .contact-button:hover {
   -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  color: #485B45;
+  transform: translateY(2px);
+  color: #485b45;
 }
 
 @media screen and (max-width: 450px) {
@@ -514,7 +520,7 @@ body {
   text-align: center;
   background-color: #1e2b22;
   height: 100%;
-  color: #82B661;
+  color: #82b661;
 }
 
 .footer h2 {
