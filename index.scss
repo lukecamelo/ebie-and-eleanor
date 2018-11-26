@@ -73,6 +73,7 @@ body {
 
 .hero {
   background-image: url('assets/forest.jpg');
+  background-attachment: inherit !important;
   background-size: cover;
   display: flex;
   justify-content: center;
